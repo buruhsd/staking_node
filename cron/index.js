@@ -12,7 +12,7 @@ con.connect(function(err) {
 		  if (err) throw err;
 });
 
-cron.schedule('*/3 * * * * *', function() {
+cron.schedule('3 5 * * *', function() {
   console.log('Running task every second');
   sendToken();
 });
