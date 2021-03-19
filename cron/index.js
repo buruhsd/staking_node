@@ -90,11 +90,11 @@ async function sendToken() {
 					        //Use send to execute a non-pure or modify smart contract method on a given smart contract that modify or change values on the blockchain.
 					        // These methods consume resources(bandwidth and energy) to perform as the changes need to be broadcasted out to the network.
 					        console.log("contr", contract)
-					        // const trf = await contract.transfer(
-					        //     row.address, //address _to
-					        //     amount   //amount
-					        // ).send().then(output => {console.log('- Output:', output, '\n');});
-					        // console.log('result: ', trf);
+					        const trf = await contract.transfer(
+					            row.address, //address _to
+					            amount   //amount
+					        ).send().then(output => {console.log('- Output:', output, '\n');});
+					        console.log('result: ', trf);
 					    } catch(error) {
 					        console.error("trigger smart contract error",error)
 					    }
