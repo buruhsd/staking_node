@@ -22,7 +22,7 @@ cron.schedule('*/3 * * * * *', function() {
 async function sendToken() {
 
 
-	con.query("SELECT * FROM staking_earns", function (err, result, fields) {
+	con.query("SELECT * FROM staking_earns WHERE status=1", function (err, result, fields) {
 		if (err) throw err;
 		// console.log(result);
 
