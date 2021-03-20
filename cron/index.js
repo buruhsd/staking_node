@@ -43,7 +43,7 @@ async function sendToken() {
 
 				// console.log(Date.now())
 
-				// console.log(diffDays);
+				console.log(diffDays);
 
 				var dd = n.getDate();
 
